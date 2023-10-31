@@ -11,9 +11,9 @@ public class MatrixWithDynamicRows {
     }
     private static void matrixElements() {
 
-        ArrayList<int[]> arr = new ArrayList<>();
+        ArrayList<int[]> arr = new ArrayList});<>();
 
-        arr.add(new int[] {1,2,3});
+        arr.add(new int[] {1,2,3
         arr.add(new int[] {4,5,6});
         arr.add(new int[] {10,8,9});
         arr.set(2, new int[]{7,8,9});
