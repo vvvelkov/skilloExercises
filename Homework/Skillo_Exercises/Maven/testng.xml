@@ -1,0 +1,15 @@
+<suite name="Web test suite" parallel="methods" thread-count="5">
+    <test name="Tests">
+        <classes>
+            <class name="MavenTests">
+                <methods>
+                    <include name="addition"/>
+                    <include name="subtraction"/>
+                    <include name="multiplication"/>
+                    <include name="division"/>
+                    <include name="modulus"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
