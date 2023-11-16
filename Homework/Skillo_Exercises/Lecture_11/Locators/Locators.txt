@@ -1,0 +1,30 @@
+
+                \\Register//
+//form/*[contains(text(), "Sign up")] -> Sign up text
+//form//input[@name='username'] -> Username box
+//form//input[@type='email'] -> Email box
+//form//input[@name='password'] -> Password box
+//form//input[@name='verify-password'] -> Confirm Password box
+//form//button[@id='sign-in-button'] -> Sign in button
+//span[@class='navbar-toggler-icon'] -> Toggle button
+//div//a[@id='nav-link-home'] -> Home button when toggle is on
+//div//a[@id='nav-link-login'] > Login button when toggle is on
+//img[@id='homeIcon'] -> Home Icon
+
+
+                  \\Home//
+//div//a[@href='/users/5046'] -> user
+//div//i[@class='like far fa-heart fa-2x'] -> love button on a post
+//div//i[@class='ml-4 far fa-thumbs-down fa-2x'] -> thumbs down on a post
+//input[@placeholder='Comment here'] -> comment here box
+//div[@class='col-12 comment-content'] -> title of a post
+
+                   \\Login//
+//form//p[@class="h4 mb-4"] -> Sign in text
+//form//input[@name="usernameOrEmail"] -> Username or email box
+//form//input[@name="password"] -> Password box
+//form//input[@formcontrolname="rememberMe"] -> checkbox
+//*[contains(text(), "Remember me")] -> Remember me after checkbox
+//form//button[@id="sign-in-button"] -> Sign in button
+//*[contains(text(), "Not a member")] -> Not a member text
+//form//a[@href="/users/register"] -> Register link
