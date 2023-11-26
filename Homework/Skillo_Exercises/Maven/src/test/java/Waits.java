@@ -40,7 +40,7 @@ public class Waits {
         };
     }
 
-    @Test(dataProvider = "inputs")
+    @Test(invocationCount = 3, dataProvider = "inputs")
     public void testLogin(String email, String password, String username){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 
@@ -73,7 +73,7 @@ public class Waits {
         userButton.click();
 
         //Verify that we are on the user's page
-        WebElement nameOfUser = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h2")));
+       wait.until(ExpectedConditions.urlContains("http://training.skillo-bg.com:4300/users"));
 
         //Follow the user
         WebElement followButton = driver.findElement(By.xpath("//*[@class =\"btn btn-primary profile-edit-btn ng-star-inserted\"]"));
